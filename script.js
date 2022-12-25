@@ -1,8 +1,6 @@
 const DICE = 60;
 
-
   var form = document.getElementById("myForm");
-
 
   form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -16,5 +14,4 @@ if (result > DICE) {
         if (result == 0) result = 15;
         alert(`Item, który otrzymujesz to ${result}.`);
       }
-    }
-  );
+});
