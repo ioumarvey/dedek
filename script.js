@@ -7,12 +7,7 @@ const DICE = 60;
   form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    var inputString = document.getElementById("roll").value;
-
-    var numbers = inputString.split(/[\s,]+/);
-
-    for (var i = 0; i < numbers.length; i++) {
-      var result = numbers[i];
+    var result = document.getElementById("roll").value;
 
 if (result > DICE) {
         alert("cos ci sie pojebalo szefie");
@@ -22,4 +17,4 @@ if (result > DICE) {
         alert(`Item, który otrzymujesz to ${result}.`);
       }
     }
-  });
+  );
