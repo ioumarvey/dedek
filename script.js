@@ -7,7 +7,7 @@ const DICE = 60;
 
     var result = document.getElementById("roll").value;
 
-if (result > DICE) {
+if (result > DICE || result <1) {
         alert("cos ci sie pojebalo szefie");
       } else {
         result %= 15;
