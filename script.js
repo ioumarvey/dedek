@@ -11,7 +11,7 @@ const DICE = 60;
     var list = document.getElementById("lists").value;
 
 
-if (result > DICE) {
+if (result > DICE || result < 1) {
         alert("cos ci sie pojebalo szefie");
       } else {
         result %= list;
